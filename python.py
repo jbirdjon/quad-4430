@@ -3,8 +3,12 @@ import turtle
 def draw():
     window = turtle.Screen()
     window.bgcolor("blue")
+    kite()
+    quadrilateral()
+    trapezoid()
     square()
     rectangle()
+    isosceles_trapezoid()
     rhombus()
     parallelogram()
     window.exitonclick()
@@ -67,5 +71,44 @@ def parallelogram():
     t.setheading(350)
     t.forward(70)
 
+def kite():
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(-250, 200)
+    t.pendown()
+    t.goto(-200, 270)
+    t.goto(-150, 200)
+    t.goto(-200, 160)
+    t.goto(-250, 200)
+
+def quadrilateral():
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(-280, 20)
+    t.pendown()
+    t.goto(-265, 120)
+    t.goto(-185, 105)
+    t.goto(-170, 35)
+    t.goto(-280, 20)
+
+def trapezoid():
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(-320, -130)
+    t.pendown()
+    t.goto(-305, -50)
+    t.goto(-225, -50)
+    t.goto(-180, -130)
+    t.goto(-320, -130)
+
+def isosceles_trapezoid():
+    t = turtle.Turtle()
+    t.penup()
+    t.goto(140, 120)
+    t.pendown()
+    t.goto(175, 200)
+    t.goto(245, 200)
+    t.goto(280, 120)
+    t.goto(140, 120)
 
 draw()
