@@ -5,7 +5,7 @@ class quadrilateral:
 
     def parent(self):
          for base in self.__class__.__bases__:
-             print base.__name__
+             print(base.__name__)
 
 class kite(quadrilateral):
     #Code
@@ -13,7 +13,7 @@ class kite(quadrilateral):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class trapezoid(quadrilateral):
     #Code
@@ -21,7 +21,7 @@ class trapezoid(quadrilateral):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class parallelogram(trapezoid):
     #Code
@@ -29,7 +29,7 @@ class parallelogram(trapezoid):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class isosceles(trapezoid):
     #Code
@@ -37,7 +37,7 @@ class isosceles(trapezoid):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class rectangle(parallelogram,isosceles):
     #Code
@@ -45,7 +45,7 @@ class rectangle(parallelogram,isosceles):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class rhombus(kite,parallelogram):
     #Code
@@ -53,7 +53,7 @@ class rhombus(kite,parallelogram):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 class square(rhombus,rectangle):
     #Code
@@ -61,7 +61,7 @@ class square(rhombus,rectangle):
         super()._init_(name)
     def parent(self):
         for base in self.__class__.__bases__:
-            print base.__name__
+            print(base.__name__)
 
 print("\nquadrilateral\nparents:")
 Quad_foo = quadrilateral()
